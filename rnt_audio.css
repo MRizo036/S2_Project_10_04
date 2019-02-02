@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 8
+   Case Problem 4
+
+   Roads Not Taken Audio Styles
+   Author: Maria De Jesus Rizo
+   Date:   2.1.19
+
+   Filename: rnt_audio.css
+
+*/
+
+/* Audio Styles */
+/* Styles within this section will affect the audio elements in the HTMl documents. */
+/* The selector states that the audio element will have the styles listed applied to it. The display property states that the element will be displayed with the properties of a block element. The box shadow property adds a box shadow of the specified offsets and colors around the attribute. Th margin property adds a margin of the specified dimensions around the element. The width property states that the element will have a width of 80% its container.  */
+audio {
+    display: block;
+    box-shadow: darkgray 8px 8px 15px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* The selector below states that the audio element that is displayed in a browser that uses webkit extensions will have the styles listed applied to it, allowing customization of the audio player. The background color property gives the element a background color of the specified color.  */
+audio::-webkit-media-controls-panel {
+    background-color: rgb(128, 128, 255);
+}
